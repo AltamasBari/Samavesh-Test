@@ -73,20 +73,6 @@ $(window).on('load', function() {
 	});
 
 	/*------------------
-		Testimonials
-	--------------------*/
-	$('.testimonial-slider').owlCarousel({
-		items: 1,
-		nav: false,
-		dots: true,
-		autoplay: true,
-		loop: true,
-		autoplayHoverPause: true,
-		animateOut: 'slideOutDown',
-   		animateIn: 'slideInDown',
-	});
-
-	/*------------------
 		Circle progress
 	--------------------*/
 	$('.circle-progress').each(function() {
@@ -116,4 +102,22 @@ $(window).on('load', function() {
 		}
 	});
 
+
+
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
 })(jQuery);
