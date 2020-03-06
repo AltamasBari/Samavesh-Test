@@ -17,7 +17,7 @@ var member32 = document.getElementById('member32');
 const sub1 = document.getElementById('submit_btn1');
 const sub2 = document.getElementById('submit_btn2');
 
-const database = firebase.database();
+var database = firebase.database();
 const rootref1 = database.ref('MAZE MICE');
 sub1.addEventListener('click',(e)=>{
 	e.preventDefault();
